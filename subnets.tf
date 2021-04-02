@@ -7,7 +7,6 @@ resource "aws_subnet" "subnet1-public" {
         Name = "${var.public_subnet1_name}"
     }
     depends_on = [
-    aws_flow_log.awsflowlogs,
     aws_internet_gateway.myvpcgw,
   ]
 }
@@ -21,7 +20,6 @@ resource "aws_subnet" "subnet2-public" {
         Name = "${var.public_subnet2_name}"
     }
     depends_on = [
-    aws_flow_log.awsflowlogs,
     aws_subnet.subnet1-public,
   ]
 }
@@ -35,7 +33,6 @@ resource "aws_subnet" "subnet3-public" {
         Name = "${var.public_subnet3_name}"
     }
     depends_on = [
-    aws_flow_log.awsflowlogs,
     aws_subnet.subnet2-public,
 
   ]

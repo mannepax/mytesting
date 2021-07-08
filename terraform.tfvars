@@ -1,5 +1,5 @@
-access_key = "AKIA42QQWM5PYC4ODEF7"
-secret_key = "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"
+access_key = ""
+secret_key = ""
 vpc_cidr = "10.50.0.0/16" 
 public_subnet1_name = "subnet-1"
 public_subnet2_name = "subnet-2"
